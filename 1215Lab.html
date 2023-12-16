@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .text {
+            color:aliceblue;
+            font-size: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            line-height: 200px;
+        }
+
+    </style>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script class="input">
+        var input1, input2;
+        var output;
+
+        input1 = window.prompt('Please enter first number!');
+        input2 = window.prompt('Please enter second number!');
+
+        if (input1 > input2) {
+            document.body.style.backgroundColor = "lightblue";
+            output = "firstInput > secondInput";
+            document.writeln('<span class="text">' + output + '</span>');
+        } else if (input1 < input2) {
+            document.body.style.backgroundColor = "orange";
+            output = "secondInput > firstInput"
+            document.writeln('<span class="text">' + output + '</span>');
+        } else {
+            document.body.style.backgroundColor = "lightyellow";
+            output = "secondInput == firstInput"
+            document.writeln('<span class="text">' + output + '</span>');
+        }
+    </script>
+
+    <div align="center"><button id="first"  onclick="document.writeln(input1)">Show first input</button></div>
+    <div align="center"><button id="first"  onclick="document.writeln(input2)">Show second input</button></div>
+
+</body>
+</html>
